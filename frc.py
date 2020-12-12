@@ -2,7 +2,8 @@ import cv2 as cv
 import numpy as np
 
 def main():    
-    img_bgr = cv.imread(r"C:\Users\altin\Documents\GitHub\frc-opencv\image_examples\BlueGoal-Far-ProtectedZone.jpg")
+    # img_bgr = cv.imread(r"C:\Users\altin\Documents\GitHub\frc-opencv\image_examples\BlueGoal-Far-ProtectedZone.jpg")
+    img_bgr = cv.imread("image_examples/BlueGoal-Far-ProtectedZone.jpg")
     img = cv.cvtColor(img_bgr, cv.COLOR_BGR2HSV)
 
     while True:    
