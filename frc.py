@@ -3,16 +3,9 @@ import numpy as np
 import sys
 
 def main():    
-<<<<<<< HEAD
-    print(sys.argv[1])
     if len(sys.argv) >= 2:    
         img_bgr = cv.imread(sys.argv[1])
         img = cv.cvtColor(img_bgr, cv.COLOR_BGR2HSV)
-=======
-    # img_bgr = cv.imread(r"C:\Users\altin\Documents\GitHub\frc-opencv\image_examples\BlueGoal-Far-ProtectedZone.jpg")
-    img_bgr = cv.imread("image_examples/BlueGoal-Far-ProtectedZone.jpg")
-    img = cv.cvtColor(img_bgr, cv.COLOR_BGR2HSV)
->>>>>>> 36362115e6bac0c9d35cbdd6d93616a709bce964
 
         while True:    
             min_green = np.array([57, 100, 100])
